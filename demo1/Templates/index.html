@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="demo1">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/script27.js"></script>
+    <script src="Scripts/script1.js"></script>
+    <link href="Style.css" rel="stylesheet" />
+    <base href="/" />
+</head>
+<body>
+    <table style="font-family:Arial">
+        <tr>
+            <td colspan="2" class="header">
+                <h1>
+                    WebSite Header
+                </h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="leftMenu">
+                <a href="#/home">Home</a>
+                <a href="#/courses">Courses</a>
+                <a href="#/s">Students</a>
+            </td>
+            <td class="mainContent">
+                <ng-view></ng-view>
+            </td>
+        <tr>
+
+            <td colspan="2 " class="footer">
+                <b>website footer</b>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
